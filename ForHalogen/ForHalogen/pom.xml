@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>MoreAndMore</groupId>
 	<artifactId>ForHalogen</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>3.11.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>ForHalogen</name>
 	<description>Development</description>
