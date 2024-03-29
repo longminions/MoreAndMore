@@ -12,39 +12,24 @@ class SignInComponent extends React.Component {
         };
       }
     
-      componentDidMount() {
-        fetch("https://api.example.com/items")
-          .then(res => res.json())
-          .then(
-            (result) => {
-              this.setState({
-                isLoaded: true,
-                items: result.items
-              });
-            },
-            (error) => {
-              this.setState({
-                isLoaded: true,
-                error
-              });
-            }
-          )
-      }
-    handleLogin(event) {
-        console.log(event);
-    }
+    handleLogin(data) {
+      axios.post('/login',{
+
+      });
+    };
+    
     
    render(){
     return(
     <div>
-        <form onSubmit={this.handleLogin}>
+        <form onSubmit={handleLogin(onsubmit)}>
             <div className="mb-3">
-                <label htmlFor="formInputAcccname" className ="form-label">Example label</label>
-                <input type="text" className="form-control" id= "formInputAcccname" placeholder="Nhập số điện thoại của bạn "></input>
+                <label htmlFor="formInputAccname" className ="form-label">Example label</label>
+                <input type="text" className="form-control" id= "formInputAccname" placeholder="Nhập số điện thoại của bạn "></input>
             </div>
             <div className="mb-3"> 
                 <label htmlFor="formGroupExampleInput2" className = "form-label">Another label</label> 
-                <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder"></input>
+                <input type="text" className="form-control" id="formInputAccname" placeholder="Another input placeholder"></input>
             </div>
             <button type="submit" className="btn btn-primary">Submit</button>
         </form>
@@ -52,3 +37,7 @@ class SignInComponent extends React.Component {
     )
 }}
 export default SignInComponent;
+
+function fetchAPI(data: any) {
+  throw new Error("Function not implemented.");
+}

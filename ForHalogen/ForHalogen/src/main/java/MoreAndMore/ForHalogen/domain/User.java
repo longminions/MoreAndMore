@@ -1,16 +1,16 @@
 package MoreAndMore.ForHalogen.domain;
 
-import org.springframework.data.annotation.Id;
+import javax.annotation.Generated;
+import javax.persistence.Column;
+import javax.persistence.GenerationType;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+import org.springframework.data.annotation.Id;
 
 public class User {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "RECORD_NO")
+	@Generated(value = { "1" })
+	@javax.persistence.Column(name = "RECORD_NO")
 	private Long recordNo;
 	
 	@Column(name = "FIRST_NAME")
